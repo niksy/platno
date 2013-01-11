@@ -17,7 +17,7 @@ Well, you clone the project :). Since boilerplate uses Normalize as submodule,
 you will have to use `--recursive` argument and pull changes from proper branch.
 
 ```bash
-$ git clone --recursive git@github.com:niksy/platno.git
+$ git clone --recursive git@github.com:niksy/platno.git .
 $ cd css/normalize
 $ git pull origin v1
 ```
