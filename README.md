@@ -9,7 +9,7 @@ highly opinionated additions and extensions to make it more robust.
 Other sources of code and inspiration include traditional
 [Meyer Reset](http://meyerweb.com/eric/tools/css/reset/),
 [HTML5 Boilerplate](http://html5boilerplate.com/) and
-[Inuit](https://github.com/csswizardry/inuit.css).
+[Inuit](http://inuitcss.com/).
 
 ## Installation
 
