@@ -26,25 +26,25 @@ After that, include it in your project structure however you want it.
 
 ## Usage
 
-Normalize (normalize.css) should be starting point for everything. After that,
-you can add additions and extensions for it via Normalize+ (normalize+.css) and
-traditional, although greatly modified, Reset styling (reset.css), which will
+**Normalize** (normalize.css) should be starting point for everything. After that,
+you can add additions and extensions for it via **Normalize+** (normalize+.css) and
+traditional, although greatly modified, **Reset** styling (reset.css), which will
 basically carpet bomb all those nasty spacing on elements :)
 
-Print styling (print.css) is used for—you guessed it—print media. To keep usability
+**Print** styling (print.css) is used for—you guessed it—print media. To keep usability
 and display problems at minimum, it’s best to use Print styling only with
 Normalize and Normalize+ but without Reset.
 
 ### Additional modules
 
-Helpers contain some battle-hardened, useful helper classes, such as
+**Helpers** contain some battle-hardened, useful helper classes, such as
 clearfix and image replacement.
 
-Diagnostics will point you errors and warnings with your markup such as empty
+**Diagnostics** will point you errors and warnings with your markup such as empty
 elements or images without alternate text so you can resolve those problems
 in timely manner.
 
-Some sensible project starting point is achieved with Starter, which contains
+Some sensible project starting point is achieved with **Starter**, which contains
 baseline styling and opt-in typography.
 
 ---
