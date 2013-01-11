@@ -1,4 +1,4 @@
-# Platno[^platno], a starting boilerplate.
+# Platno, a starting boilerplate.
 
 This is my starting boilerplate for all projects. Based on my personal development
 practices it includes enough styling and markup to start proper modern development.
@@ -47,4 +47,6 @@ in timely manner.
 Some sensible project starting point is achieved with Starter, which contains
 baseline styling and opt-in typography.
 
-[^platno]: Platno is roughly translated to "blank canvas" in Croatian :)
+---
+
+Platno is roughly translated to "blank canvas" in Croatian :)
