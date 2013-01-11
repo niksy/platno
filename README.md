@@ -18,7 +18,7 @@ you will have to use `--recursive` argument and pull changes from proper branch.
 
 ```bash
 $ git clone --recursive git@github.com:niksy/platno.git
-$ cd normalize
+$ cd css/normalize
 $ git pull origin v1
 ```
 
