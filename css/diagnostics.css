@@ -1,0 +1,56 @@
+/**
+ * Diagnostics CSS used to check if there’s something wrong with the markup.
+ *
+ * Magenta = error and should be fixed
+ * Cyan    = warning and should be double-checked
+ */
+
+/* ==========================================================================
+   Errors
+   ========================================================================== */
+
+/**
+ * 1. There should be no empty elements.
+ * 2. Links should have filled `href` attributes.
+ * 3. Images should have (at least empty) `alt` atributes.
+ * 4. `form` should have `action` attribute.
+ * 5. `label` should have `for` attribute.
+ * 6. `textarea` should have `rows` and `cols` attribute.
+ */
+:empty, /* 1 */
+a[href=""], /* 2 */
+img:not([alt]), /* 3 */
+form:not([action]), /* 4 */
+label:not([for]), label[for=""] /* 5 */
+textarea:not([rows]), textarea:not([cols]) /* 6 */ {
+	outline:3px solid magenta;
+}
+
+/* ==========================================================================
+   Warnings
+   ========================================================================== */
+
+/**
+ * 1. Check elements with `style` and `id` attributes.
+ * 2. Shouldn’t `a` elements have *real* `href` attributes?
+ * 3. For a11y reasons, it’s nice to have `title` attribute on `a`.
+ * 4. Maybe it’s better to have some content for `alt` attribute?
+ * 5. Try to change `input` button to real `button`.
+ * 6. `tr`s as children of `table`s ain’t great, did you need a `thead`/`tbody`?
+ * 7. `tfoot` needs to come before `tbody`.
+ * 8. For backwards compatibility, include `cellpadding` and `cellspacing`.
+ * 9. For a11y reasons, it’s nice to have `summary` attribute on `table`.
+ * 10. Check for `scope` attribute on `th` elements.
+ */
+[style], [id], /* 1 */
+a[href="#"], a[href^="javascript"], /* 2 */
+a[href]:not([title]), a[title=""], /* 3 */
+img[alt=""], /* 4 */
+input[type="button"], input[type="submit"], input[type="image"], /* 5 */
+table > tr, /* 6 */
+tbody + tfoot, /* 7 */
+table:not([cellpadding]), table:not([cellspacing]), /* 8 */
+table:not([summary]), table[summary=""], /* 9 */
+th:not([scope]) /* 10 */ {
+	outline:3px solid cyan;
+}

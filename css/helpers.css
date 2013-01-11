@@ -1,0 +1,91 @@
+/**
+ * Helper classes for easier development.
+ */
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+/**
+ * Image replacement.
+ */
+.ir {
+	overflow:hidden;
+	text-indent:-9999px;
+	background-color:transparent;
+}
+.ir br {
+	display:none;
+}
+
+/**
+ * Hide from both screenreaders and browsers.
+ */
+.hidden {
+	display:none !important;
+	visibility:hidden;
+}
+
+/**
+ * Hide visually and from screenreaders, but maintain layout.
+ */
+.invisible {
+	visibility:hidden;
+}
+
+/**
+ * Hide only visually, but have it available for screenreaders.
+ */
+.vis-hidden {
+	position:absolute; top:-9999px; left:-9999px;
+}
+
+/**
+ * Extends the .vis-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard.
+ */
+.vis-hidden.focusable:active,
+.vis-hidden.focusable:focus {
+	position:static;
+}
+
+/**
+ * Clearfix for containing floats.
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `cf` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.group:before, .group:after,
+.cf:before, .cf:after {
+	content:" "; /* 1 */
+	display:table; /* 2 */
+}
+.group:after, .cf:after {
+	clear:both;
+}
+.group, .cf {
+	*zoom:1;
+}
+
+/* ==========================================================================
+   Mobile
+   ========================================================================== */
+
+/**
+ * Prevent callout.
+ */
+.no-callout {
+	-webkit-touch-callout:none;
+}
+
+/**
+ * Disable highlight when pressed.
+ */
+.pressed {
+	background-color:rgba(0, 0, 0, 0.7);
+}

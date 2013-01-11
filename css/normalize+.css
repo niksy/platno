@@ -1,0 +1,175 @@
+/**
+ * Opinionated additions/extensions to Normalize.
+ */
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * Display vertical scrollbar at all times.
+ */
+html {
+	overflow-y:scroll;
+}
+
+/**
+ * 1. Use black color for text.
+ * 2. Use white color for background.
+ */
+body {
+	color:#000; /* 1 */
+	background-color:#fff; /* 2 */
+}
+
+/**
+ * Remove text shadow when text is selected.
+ * NOTE: Since this will overwrite default background color of selection,
+ *   it is only useful when it’s implemented with custom background color.
+ */
+/*::-moz-selection {
+	text-shadow:none;
+}
+::selection {
+	text-shadow:none;
+}*/
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Add help cursor for some elements.
+ */
+abbr[title], acronym[title], dfn {
+	cursor:help;
+}
+
+/**
+ * Improve horizontal rule display.
+ */
+hr {
+	display:block; padding:0; margin:1em 0;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Improve display of numbered list items in IE 6/7.
+ */
+ol li {
+	*display:list-item;
+	*vertical-align:top;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Alternative text will be visually offset if images don’t load.
+ * 2. Remove the gap between images and the bottom of their containers.
+ */
+img {
+	font-style:italic;
+	vertical-align:bottom;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Display ellipsis in placeholders so they don’t get cut off.
+ */
+::-webkit-input-placeholder {
+	text-overflow:ellipsis;
+}
+:-moz-placeholder {
+	text-overflow:ellipsis;
+}
+::-moz-placeholder {
+	text-overflow:ellipsis;
+}
+
+/**
+ * 1. Set sensible defaults for elements with invalid form input.
+ * 2. Set sensible styling for all browsers.
+ */
+input:invalid,
+textarea:invalid {
+	outline:0; /* 1 */
+	-webkit-box-shadow:0 0 4px #f00; /* 2 */
+	        box-shadow:0 0 4px #f00; /* 2 */
+}
+
+/**
+ * Line wrap text in `legend` for IE.
+ */
+legend {
+	display:table;
+}
+
+/**
+ * 1. Constraint `textarea` to vertical resize only.
+ * 2. A hack for HTML5 `contenteditable` attribute on mobile.
+ */
+textarea {
+	resize:vertical; /* 1 */
+}
+textarea[contenteditable] {
+	-webkit-appearance:none; /* 2 */
+}
+
+/**
+ * Set `select` background color to white because some OSs (e.g. Linux) don’t
+ * use it as default.
+ */
+select {
+	background-color:#fff;
+}
+
+/**
+ * Add pointer cursor to some form elements for better interactivity.
+ * 1. Cater to IE 6/7 bug where cursor won’t work on `span` elements.
+ */
+a[href] span, button span, /* 1 */
+select,
+label[for],
+input[type="image"] {
+	cursor:pointer;
+}
+
+/**
+ * "Sliding doors" technique fixes.
+ */
+button, button span {
+	display:block;
+	background-color:transparent;
+}
+button {
+	width:auto; *width:1%;
+}
+button span {
+	white-space:nowrap;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+/**
+ * Get IE 10 Snap Mode to play nicely with `meta` viewport.
+ * Also, set it for Opera and future-proof it.
+ */
+@-ms-viewport {
+	width:device-width;
+}
+@-o-viewport {
+	width:device-width;
+}
+@viewport {
+	width:device-width;
+}

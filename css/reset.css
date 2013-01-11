@@ -1,0 +1,48 @@
+/**
+ * Global styling reset, use with and after Normalize and with caution!
+ * Goes best with screen display.
+ */
+
+/**
+ * 1. Reset styling for all elements.
+ * 2. How many times did you set repeat to non repeat? :);
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+input, button, textarea, select, option, optgroup,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+	margin:0; padding:0; border:0; /* 1 */
+	background-repeat:no-repeat; /* 2 */
+}
+
+/**
+ * Reset leading for `body`.
+ */
+body {
+	line-height:1;
+}
+
+/*
+ * Remove styling for lists.
+ */
+ol, ul, li {
+	list-style:none;
+}
+
+/**
+ * Since Reset should come after Normalize, some sensible styling is lost.
+ * These declarations bring back that styling for specific elements.
+ * It’s not pretty, but it gets the job done.
+ */
+legend {
+	*margin-left:-7px;
+}
