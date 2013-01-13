@@ -11,6 +11,9 @@ Other sources of code and inspiration include traditional
 [HTML5 Boilerplate](http://html5boilerplate.com/) and
 [Inuit](http://inuitcss.com/).
 
+Browser support includes Internet Explorer 7+ and for other browsers their
+modern versions (basically, versions from the last 6 months).
+
 ## Installation
 
 Well, you clone the project :). Since boilerplate uses Normalize as submodule,
