@@ -14,11 +14,11 @@ html {
 }
 
 /**
- * 1. Use black color for text.
+ * 1. Use dark gray color for text.
  * 2. Use white color for background.
  */
 body {
-	color:#000; /* 1 */
+	color:#333; /* 1 */
 	background-color:#fff; /* 2 */
 }
 
