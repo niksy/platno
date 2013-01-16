@@ -22,18 +22,6 @@ body {
 	background-color:#fff; /* 2 */
 }
 
-/**
- * Remove text shadow when text is selected.
- * NOTE: Since this will overwrite default background color of selection,
- *   it is only useful when it’s implemented with custom background color.
- */
-/*::-moz-selection {
-	text-shadow:none;
-}
-::selection {
-	text-shadow:none;
-}*/
-
 /* ==========================================================================
    Typography
    ========================================================================== */
