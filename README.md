@@ -10,10 +10,15 @@ Browser support includes Internet Explorer 7+ and for other browsers their moder
 
 ## Installation
 
-Well, you clone the project :). Since boilerplate uses Normalize as submodule, you will have to use `--recursive` argument and pull changes from proper branch.
+Well, you clone the project :). Since boilerplate uses Normalize as submodule, you will have to use `--recursive` argument.
 
 ```bash
 $ git clone --recursive git@github.com:niksy/platno.git .
+```
+
+If you want to have latest changes from Normalize submodule instead of last commit which is referenced by submodule, you can pull manually all changes from upstream.
+
+```bash
 $ cd css/normalize
 $ git pull origin v1
 ```
