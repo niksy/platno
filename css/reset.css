@@ -17,7 +17,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 input, button, textarea, select, option, optgroup,
-article, aside, figure, footer, header,
+article, aside, figure, footer, header, main,
 hgroup, menu, nav, section, menu,
 time, mark, audio, video {
 	margin:0; padding:0; border:0; /* 1 */
