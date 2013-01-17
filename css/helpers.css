@@ -10,9 +10,11 @@
  * Image replacement.
  */
 .ir {
+	display:block;
 	overflow:hidden;
-	text-indent:-9999px;
-	background-color:transparent;
+	text-align:left; text-indent:-9999px;
+	direction:ltr;
+	background-color:transparent; background-repeat:no-repeat;
 }
 .ir br {
 	display:none;
