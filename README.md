@@ -39,6 +39,11 @@ After that, include it in your project structure however you want it.
 
 Some sensible project starting point is achieved with **Starter** (`starter.css`), which contains baseline styling and opt-in typography.
 
+## Notes
+
+* To use HTML5 elements in IE<=8, it’s best to [download Modernizr](http://modernizr.com/download/) with included printshiv support.
+* Various server configuration files can be found in [H5BP server-configs repository](https://github.com/h5bp/server-configs).
+
 ---
 
 Platno is roughly translated to "blank canvas" in Croatian :)
