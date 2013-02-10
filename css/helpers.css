@@ -61,11 +61,13 @@
  *    that receive the `cf` class.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
+ * 3. Just to be sure borders are really collapsed on clearfixed elements.
  */
 .group:before, .group:after,
 .cf:before, .cf:after {
 	content:" "; /* 1 */
 	display:table; /* 2 */
+	border-collapse:collapse; /* 3 */
 }
 .group:after, .cf:after {
 	clear:both;
