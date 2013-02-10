@@ -4,8 +4,7 @@
  */
 
 /**
- * 1. Reset styling for all elements.
- * 2. How many times did you set repeat to non repeat? :);
+ * Reset styling for all elements.
  */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr,
@@ -20,8 +19,7 @@ input, button, textarea, select, option, optgroup,
 article, aside, figure, footer, header, main,
 hgroup, menu, nav, section, menu,
 time, mark, audio, video {
-	margin:0; padding:0; border:0; /* 1 */
-	background-repeat:no-repeat; /* 2 */
+	margin:0; padding:0; border:0;
 }
 
 /**
