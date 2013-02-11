@@ -41,7 +41,7 @@ Some sensible project starting point is achieved with **Starter** (`starter.css`
 
 ## Notes
 
-* To use HTML5 elements in IE<=8, it’s best to [download Modernizr](http://modernizr.com/download/) with included printshiv support.
+* To use HTML5 elements in IE &#8804; 8, it’s best to [download Modernizr](http://modernizr.com/download/) with included printshiv support.
 * Various server configuration files can be found in [H5BP server-configs repository](https://github.com/h5bp/server-configs).
 
 ---
