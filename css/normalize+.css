@@ -13,6 +13,14 @@ html {
 	overflow-y:scroll;
 }
 
+/**
+ * Normalize body background and text color.
+ */
+body {
+	background-color:#fff;
+	color:#000;
+}
+
 /* ==========================================================================
    Typography
    ========================================================================== */
