@@ -42,8 +42,8 @@ input, textarea {
 .ugc h1, .ugc h3, .ugc h4 {
 	margin:20px 0;
 }
-.ugc ul, .ugc ol  {
-	margin-left:30px;
+.ugc ul, .ugc ol {
+	padding-left:40px;
 }
 .ugc ul {
 	list-style-type:disc;
