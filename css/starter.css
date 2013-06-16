@@ -37,10 +37,10 @@ input, textarea {
 .ugc img {
 	vertical-align:baseline;
 }
-.ugc p, .ugc ul,
-.ugc ol, .ugc h2,
-.ugc h3, .ugc h4  {
-	margin:0 0 20px;
+.ugc p,
+.ugc ul, .ugc ol,
+.ugc h1, .ugc h3, .ugc h4 {
+	margin:20px 0;
 }
 .ugc ul, .ugc ol  {
 	margin-left:30px;
