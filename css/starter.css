@@ -10,11 +10,11 @@
  * =============================================================================
  */
 
-body {
+html {
 	font-size:100%; line-height:1.5;
 	color:#333;
 }
-body, select, button,
+html, select, button,
 input, textarea {
 	font-family:"Arial",sans-serif;
 }
