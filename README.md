@@ -18,7 +18,7 @@ $ git clone git@github.com:niksy/platno.git
 
 ## Usage
 
-Platno’s assets are SASS partials so it’s best to include them as such in your SASS preprocessing workflow. With that you have option to change environment variables such as support for Internet Explorer <= 7.
+Platno’s assets are SASS partials so it’s best to include them as such in your SASS preprocessing workflow. With that you have option to change environment variables such as support for Internet Explorer &#8804; 7.
 
 [**Normalize**](http://necolas.github.com/normalize.css/) should be starting point for everything. You can download it with your preferred method (e.g. manual installation or package manager like [Bower](http://bower.io)).
 
