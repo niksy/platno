@@ -77,23 +77,3 @@
 .group, .cf {
 	*zoom:1;
 }
-
-/**
- * =============================================================================
- * Mobile
- * =============================================================================
- */
-
-/**
- * Prevent callout.
- */
-.no-callout {
-	-webkit-touch-callout:none;
-}
-
-/**
- * Disable highlight when pressed.
- */
-.pressed {
-	background-color:rgba(0, 0, 0, 0.7);
-}
