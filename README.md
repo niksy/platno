@@ -16,6 +16,8 @@ Clone the project and include it in your project structure however you want it.
 $ git clone git@github.com:niksy/platno.git
 ```
 
+After that, include other dependencies like [Normalize](http://necolas.github.com/normalize.css/) with your preferred method (e.g. manual installation or package manager like [Bower](http://bower.io)).
+
 ## Usage
 
 [**Normalize**](http://necolas.github.com/normalize.css/) should be starting point for everything. After that, you can add additions and extensions for it via **Normalize+** (`normalize+.css`) and traditional, although greatly modified, **Reset** styling (`reset.css`), which will basically carpet bomb all those nasty spacing on elements :)
