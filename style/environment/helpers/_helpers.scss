@@ -1,0 +1,103 @@
+/**
+ * Helper classes for easier development.
+ */
+
+/**
+ * =============================================================================
+ * General
+ * =============================================================================
+ */
+
+/**
+ * Image replacement.
+ */
+@mixin helper-ir {
+	display:block;
+	overflow:hidden;
+	text-align:left; text-indent:-9999px;
+	direction:ltr;
+	background-color:transparent; background-repeat:no-repeat;
+
+	br {
+		display:none;
+	}
+}
+
+/**
+ * Hide from both screenreaders and browsers.
+ */
+@mixin helper-hidden {
+	display:none !important;
+	visibility:hidden;
+}
+
+/**
+ * Hide visually and from screenreaders, but maintain layout.
+ */
+@mixin helper-invisible {
+	visibility:hidden;
+}
+
+/**
+ * Hide only visually, but have it available for screenreaders.
+ */
+@mixin helper-vis-hidden( $focusable:false ) {
+	position:absolute; top:-9999px; left:-9999px;
+
+	/**
+	 * Extends the .vis-hidden class to allow the element
+	 * to be focusable when navigated to via the keyboard.
+	 */
+	@if $focusable {
+		@include helper-vis-hidden-focusable;
+	}
+}
+
+/**
+ * Extends the .vis-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard.
+ */
+@mixin helper-vis-hidden-focusable {
+	&:active,
+	&:focus {
+		position:static;
+	}
+}
+
+/**
+ * Clearfix for containing floats.
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `cf` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 3. Just to be sure borders are really collapsed on clearfixed elements.
+ */
+@mixin _helper-cf-clearing {
+	content:" "; /* 1 */
+	display:table; /* 2 */
+	border-collapse:collapse; /* 3 */
+}
+@mixin helper-cf {
+
+	@if $platno-support-old-ie {
+		*zoom:1;
+
+		&:before,
+		&:after {
+			@include _helper-cf-clearing;
+		}
+
+		&:after {
+			clear:both;
+		}
+	} @else {
+		&:after {
+			@include _helper-cf-clearing;
+			clear:both;
+		}
+	}
+}

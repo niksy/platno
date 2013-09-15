@@ -12,45 +12,36 @@
  * Image replacement.
  */
 .ir {
-	display:block;
-	overflow:hidden;
-	text-align:left; text-indent:-9999px;
-	direction:ltr;
-	background-color:transparent; background-repeat:no-repeat;
-}
-.ir br {
-	display:none;
+	@include helper-ir;
 }
 
 /**
  * Hide from both screenreaders and browsers.
  */
 .hidden {
-	display:none !important;
-	visibility:hidden;
+	@include helper-hidden;
 }
 
 /**
  * Hide visually and from screenreaders, but maintain layout.
  */
 .invisible {
-	visibility:hidden;
+	@include helper-invisible;
 }
 
 /**
  * Hide only visually, but have it available for screenreaders.
  */
 .vis-hidden {
-	position:absolute; top:-9999px; left:-9999px;
-}
+	@include helper-vis-hidden;
 
-/**
- * Extends the .vis-hidden class to allow the element
- * to be focusable when navigated to via the keyboard.
- */
-.vis-hidden.focusable:active,
-.vis-hidden.focusable:focus {
-	position:static;
+	/**
+	 * Extends the .vis-hidden class to allow the element
+	 * to be focusable when navigated to via the keyboard.
+	 */
+	&.is-focusable {
+		@include helper-vis-hidden-focusable;
+	}
 }
 
 /**
@@ -65,15 +56,6 @@
  *    `:before` to contain the top-margins of child elements.
  * 3. Just to be sure borders are really collapsed on clearfixed elements.
  */
-.group:before, .group:after,
-.cf:before, .cf:after {
-	content:" "; /* 1 */
-	display:table; /* 2 */
-	border-collapse:collapse; /* 3 */
-}
-.group:after, .cf:after {
-	clear:both;
-}
 .group, .cf {
-	*zoom:1;
+	@include helper-cf;
 }

@@ -10,27 +10,29 @@ Browser support includes Internet Explorer 7+ and for other browsers their moder
 
 ## Installation
 
-Clone the project and include it in your project structure however you want it.
+Clone the project.
 
 ```bash
 $ git clone git@github.com:niksy/platno.git
 ```
 
-After that, include other dependencies like [Normalize](http://necolas.github.com/normalize.css/) with your preferred method (e.g. manual installation or package manager like [Bower](http://bower.io)).
-
 ## Usage
 
-[**Normalize**](http://necolas.github.com/normalize.css/) should be starting point for everything. After that, you can add additions and extensions for it via **Normalize+** (`normalize+.css`) and traditional, although greatly modified, **Reset** styling (`reset.css`), which will basically carpet bomb all those nasty spacing on elements :)
+Platno’s assets are SASS partials so it’s best to include them as such in your SASS preprocessing workflow. With that you have option to change environment variables such as support for Internet Explorer <= 7.
 
-**Print** styling (`print.css`) is used for—you guessed it—print media. To keep usability and display problems at minimum, it’s best to use Print styling only with Normalize and Normalize+ but without Reset.
+[**Normalize**](http://necolas.github.com/normalize.css/) should be starting point for everything. You can download it with your preferred method (e.g. manual installation or package manager like [Bower](http://bower.io)).
+
+After that, you can add additions and extensions for it via **Normalize+** (`normalize+`) and traditional, although greatly modified, **Reset** styling (`reset`), which will basically carpet bomb all those nasty spacing on elements :)
+
+**Print** styling (`print`) is used for—you guessed it—print media. To keep usability and display problems at minimum, it’s best to use Print styling only with Normalize and Normalize+ but without Reset.
 
 ### Additional modules
 
-**Helpers** (`helpers.css`) contain some battle-hardened, useful helper classes, such as clearfix and image replacement.
+**Helpers** (`helpers`) contain some battle-hardened, useful helper classes, such as clearfix and image replacement.
 
-**Diagnostics** (`diagnostics.css`) will point you errors and warnings with your markup such as empty elements or images without alternate text so you can resolve those problems in timely manner.
+**Diagnostics** (`diagnostics`) will point you errors and warnings with your markup such as empty elements or images without alternate text so you can resolve those problems in timely manner.
 
-Some sensible project starting point is achieved with **Starter** (`starter.css`), which contains baseline styling and opt-in typography.
+Some sensible project starting point is achieved with **Starter** (`starter`), which contains baseline styling, and **UGC** (`ugc`) with opt-in typography.
 
 ## Notes
 

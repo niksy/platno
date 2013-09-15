@@ -23,9 +23,9 @@ time, mark, audio, video {
 }
 
 /**
- * Reset leading for `body`.
+ * Reset leading for `html`.
  */
-body {
+html {
 	line-height:1;
 }
 
@@ -41,6 +41,14 @@ ol, ul, li {
  * These declarations bring back that styling for specific elements.
  * It’s not pretty, but it gets the job done.
  */
-legend {
-	*margin-left:-7px;
+
+@if $platno-support-old-ie {
+
+	/**
+	 * Correct alignment displayed oddly in IE 6/7.
+	 */
+	legend {
+		*margin-left:-7px;
+	}
+
 }

@@ -4,9 +4,48 @@
 
 /**
  * =============================================================================
+ * HTML5 display definitions
+ * =============================================================================
+ */
+
+@if $platno-support-old-ie {
+
+	/**
+	 * Address `[hidden]` styling not present in IE.
+	 * Hide the `template` element in IE, Safari, and Firefox < 22.
+	 *
+	 * Addition ref. https://github.com/necolas/normalize.css/commit/77982e2
+	 */
+
+	[hidden],
+	template {
+		display:none;
+	}
+
+}
+
+/**
+ * =============================================================================
  * Base
  * =============================================================================
  */
+
+@if not $platno-support-old-ie {
+
+	/**
+	 * Use easier method for layout creation and modification.
+	 */
+	* {
+		&,
+		&:before,
+		&:after {
+			-webkit-box-sizing:border-box;
+			   -moz-box-sizing:border-box;
+			        box-sizing:border-box;
+		}
+	}
+
+}
 
 /**
  * Display vertical scrollbar at all times.
@@ -21,6 +60,26 @@ html {
 body {
 	background-color:#fff;
 	color:#000;
+}
+
+/**
+ * =============================================================================
+ * Links
+ * =============================================================================
+ */
+
+@if $platno-support-old-ie {
+
+	/**
+	 * Remove the gray background color from active links in IE 10.
+	 *
+	 * Addition ref. https://github.com/necolas/normalize.css/commit/37b483c
+	 */
+
+	a {
+		background:transparent;
+	}
+
 }
 
 /**
@@ -49,12 +108,16 @@ hr {
  * =============================================================================
  */
 
-/**
- * Improve display of numbered list items in IE 6/7.
- */
-ol li {
-	*display:list-item;
-	*vertical-align:top;
+@if $platno-support-old-ie {
+
+	/**
+	 * Improve display of numbered list items in IE 6/7.
+	 */
+	ol li {
+		*display:list-item;
+		*vertical-align:top;
+	}
+
 }
 
 /**
@@ -70,6 +133,16 @@ ol li {
 img {
 	font-style:italic;
 	vertical-align:bottom;
+
+	@if $platno-use-fluid-images {
+
+		/**
+		 * Make images expand as large as their container,
+		 * keeping the height proportional to the width.
+		 */
+		max-width:100%; height:auto;
+
+	}
 }
 
 /**
@@ -130,13 +203,26 @@ select {
 
 /**
  * Add pointer cursor to some form elements for better interactivity.
- * 1. Cater to IE 6/7 bug where cursor won’t work on `span` elements.
  */
-a[href] span, button span, /* 1 */
+
+%platno-interactive-elements-cursor {
+	cursor:pointer;
+}
 select,
 label[for],
 input[type="image"] {
-	cursor:pointer;
+	@extend %platno-interactive-elements-cursor;
+}
+
+@if $platno-support-old-ie {
+
+	/**
+	 * Cater to IE 6/7 bug where cursor won’t work on `span` elements.
+	 */
+	a[href] span, button span {
+		@extend %platno-interactive-elements-cursor;
+	}
+
 }
 
 /**
