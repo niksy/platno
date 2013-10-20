@@ -157,6 +157,13 @@ img {
 }
 
 /**
+ * Remove the gap between elements and the bottom of their containers.
+ */
+object, embed {
+	vertical-align:bottom;
+}
+
+/**
  * =============================================================================
  * Forms
  * =============================================================================
