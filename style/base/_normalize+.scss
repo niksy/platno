@@ -187,6 +187,21 @@ textarea:invalid {
 }
 
 /**
+ * Give input@type="search" box sizing of border-box to have it visually
+ * consistent with the rest of form elements.
+ */
+
+@if not $platno-support-old-ie {
+
+	input[type="search"] {
+		-webkit-box-sizing:border-box;
+		   -moz-box-sizing:border-box;
+		        box-sizing:border-box;
+	}
+
+}
+
+/**
  * Line wrap text in `legend` for IE.
  */
 legend {
