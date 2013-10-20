@@ -234,10 +234,10 @@ input[type="image"] {
  */
 
 /**
- * Visually emphasize elements with custom tabindex which should
+ * Visually emphasize focused elements with custom tabindex which should
  * be keyboard accessible.
  */
-[tabindex="0"] {
+[tabindex="0"]:focus {
 	outline:thin dotted;
 }
 
