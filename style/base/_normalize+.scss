@@ -144,6 +144,15 @@ img {
 		 */
 		max-width:100%; height:auto;
 
+		/**
+		 * Fluid styles mess up Google Maps images
+		 * so we have to reset them to inital state
+		 */
+		.gm-style & {
+			max-width:none;
+			vertical-align:baseline;
+		}
+
 	}
 }
 
