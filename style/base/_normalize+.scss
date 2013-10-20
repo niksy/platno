@@ -236,6 +236,7 @@ select {
 }
 select,
 label[for],
+label input,
 input[type="image"] {
 	@extend %platno-interactive-elements-cursor;
 }
