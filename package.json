@@ -1,6 +1,6 @@
 {
   "name": "platno",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Personal starting boilerplate by Ivan Nikolić",
   "main": "Gruntfile.js",
   "scripts": {
