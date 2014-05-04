@@ -10,10 +10,10 @@ Browser support includes Internet Explorer 7+ and for other browsers their moder
 
 ## Installation
 
-Clone the project.
+Clone the projects or install via [Bower](http://bower.io/).
 
 ```bash
-$ git clone git@github.com:niksy/platno.git
+bower install niksy/platno
 ```
 
 ## Usage

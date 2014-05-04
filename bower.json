@@ -1,0 +1,27 @@
+{
+  "name": "platno",
+  "version": "1.1.1",
+  "homepage": "https://github.com/niksy/platno",
+  "description": "Personal starting boilerplate by Ivan Nikolić",
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "boileplate",
+    "start"
+  ],
+  "authors": [
+    "Ivan Nikolić"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.1"
+  }
+}

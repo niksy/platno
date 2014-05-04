@@ -1,2 +1,4 @@
-.sass-cache
-style/dist
+node_modules/
+bower_components/
+.sass-cache/
+style/dist/
