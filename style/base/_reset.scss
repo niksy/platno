@@ -15,11 +15,42 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-input, button, textarea, select, option, optgroup,
+button, textarea, select, option, optgroup,
 article, aside, figure, footer, header, main,
 hgroup, menu, nav, section, menu,
 time, mark, audio, video {
 	margin:0; padding:0; border:0;
+}
+
+/**
+ * Differentiate styling for input elements.
+ * Border will be reset for every (currently valid) input element except
+ * checkbox and radio inputs to keep their default styling untouched.
+ *
+ * We have to do this way since support for `:not()` selector is not available
+ * in IE<9.
+ *
+ * Ref. http://www.w3.org/TR/html-markup/input.html
+ */
+input {
+	margin:0; padding:0;
+}
+input {
+
+	$platno-remove-border-inputs: (
+		'text','password','button','submit','reset','file','hidden','image',
+		'datetime','datetime-local','date','month','time','week','number',
+		'range','email','url','search','tel','color'
+	);
+	$platno-remove-border-inputs-selector: ();
+
+	@each $item in $platno-remove-border-inputs {
+		$platno-remove-border-inputs-selector: append($platno-remove-border-inputs-selector, unquote('&[type="#{$item}"]'), comma);
+	}
+
+	#{$platno-remove-border-inputs-selector} {
+		border:0;
+	}
 }
 
 /**
