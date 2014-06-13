@@ -13,7 +13,7 @@ module.exports = function ( grunt ) {
 				commitFiles: ['-a'],
 				createTag: true,
 				tagName: '%VERSION%',
-				tagMessage: 'Version %VERSION%',
+				tagMessage: '',
 				push: false
 			}
 		}
