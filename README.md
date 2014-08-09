@@ -22,9 +22,9 @@ Platno’s assets are SASS partials so it’s best to include them as such in yo
 
 [**Normalize**](http://necolas.github.com/normalize.css/) should be starting point for everything. You can download it with your preferred method (e.g. manual installation or package manager like [Bower](http://bower.io)).
 
-After that, you can add additions and extensions for it via **Normalize+** (`normalize+`) and traditional, although greatly modified, **Reset** styling (`reset`), which will basically carpet bomb all those nasty spacing on elements :)
+After that, you can add additions and extensions for it via [**Rationalize**](https://github.com/niksy/rationalize.css) and traditional, although greatly modified, **Reset** styling (`reset`), which will basically carpet bomb all those nasty spacing on elements :)
 
-**Print** styling (`print`) is used for—you guessed it—print media. To keep usability and display problems at minimum, it’s best to use Print styling only with Normalize and Normalize+ but without Reset.
+**Print** styling (`print`) is used for—you guessed it—print media. To keep usability and display problems at minimum, it’s best to use Print styling only with Normalize and Rationalize but without Reset.
 
 ### Additional modules
 
