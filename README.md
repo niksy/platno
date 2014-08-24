@@ -30,8 +30,6 @@ After that, you can add additions and extensions for it via [**Rationalize**](ht
 
 **Helpers** (`helpers`) contain some battle-hardened, useful helper classes, such as clearfix and image replacement.
 
-**Diagnostics** (`diagnostics`) will point you errors and warnings with your markup such as empty elements or images without alternate text so you can resolve those problems in timely manner.
-
 Some sensible project starting point is achieved with **Starter** (`starter`), which contains baseline styling, and **UGC** (`ugc`) with opt-in typography.
 
 ## Notes
