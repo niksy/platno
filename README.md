@@ -24,8 +24,6 @@ Platno’s assets are SASS partials so it’s best to include them as such in yo
 
 After that, you can add additions and extensions for it via [**Rationalize**](https://github.com/niksy/rationalize.css) and traditional, although greatly modified, **Reset** styling (`reset`), which will basically carpet bomb all those nasty spacing on elements :)
 
-**Print** styling (`print`) is used for—you guessed it—print media. To keep usability and display problems at minimum, it’s best to use Print styling only with Normalize and Rationalize but without Reset.
-
 ### Additional modules
 
 **Helpers** (`helpers`) contain some battle-hardened, useful helper classes, such as clearfix and image replacement.
