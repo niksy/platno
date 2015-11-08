@@ -22,7 +22,7 @@ Platno’s assets are SASS partials so it’s best to include them as such in yo
 
 [**Normalize**](http://necolas.github.com/normalize.css/) should be starting point for everything. You can download it with your preferred method (e.g. manual installation or package manager like [Bower](http://bower.io)).
 
-After that, you can add additions and extensions for it via [**Rationalize**](https://github.com/niksy/rationalize.css) and traditional, although greatly modified, **Reset** styling (`reset`), which will basically carpet bomb all those nasty spacing on elements :)
+After that, you can add additions and extensions for it via [**Rationalize**](https://github.com/niksy/rationalize.css) and traditional, although greatly modified, [**Reset**](https://github.com/niksy/restart.css), which will basically carpet bomb all those nasty spacing on elements :)
 
 ### Additional modules
 
