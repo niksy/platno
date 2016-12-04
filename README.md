@@ -1,3 +1,11 @@
+![Deprecated project](https://img.shields.io/badge/status-deprecated-red.svg)
+
+**This project is deprecated.**
+
+Various helpers and boilerplates were transfered to more focused projects.
+
+---
+
 # Platno, a starting boilerplate.
 
 This is my starting boilerplate for all projects. Based on my personal development practices it includes enough styling and markup to start proper modern development.
